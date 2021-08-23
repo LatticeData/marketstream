@@ -1,6 +1,4 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
 
 from latticestockdataclient.search import (
     wikipedia_url_to_ticker_symbol,
