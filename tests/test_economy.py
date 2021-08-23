@@ -1,6 +1,5 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
+
 from latticestockdataclient.economy import (
     risk_free_rate,
     last_year_market_return
