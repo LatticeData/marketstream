@@ -1,6 +1,4 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
 
 from latticestockdataclient.screeners import (
     conservative_foreign_funds,
