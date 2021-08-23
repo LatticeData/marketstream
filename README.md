@@ -9,6 +9,7 @@ An user friendly library to fetch data related to stock market in no time.
     - [Installation](#Installation)
     - [API Authentication](#API-Authentication)
     - [Dependencies](#Dependencies)
+  - [License](#license)
   - [Usage](#Usage)
     - [Category: Buzz](#category-buzz)
       - [Function: news_sentiment](#function-news_sentiment)
@@ -113,11 +114,11 @@ An user friendly library to fetch data related to stock market in no time.
       - [Function: s_and_p_100](#function-s_and_p_100)
       - [Function: s_and_p_global_100](#function-s_and_p_global_100)
       - [Function: niftybank](#function-niftybank)
-  - [License](#license)
-
 
 ## Overview
+
 ## Setup
+
 ### Installation
 The easiest way to install this package is using pip:
 ```bash
@@ -143,6 +144,12 @@ These are listed in the `requirements.txt` file. Install them using pip:
 ```bash
 pip install -r requirements.txt
 ```
+
+## License
+
+The Stock Data Python client is licensed under the
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
 ## Usage
 ### Category: Buzz
 This package provides online buzz data about stocks, pulled from news outlets and social media.
@@ -2876,7 +2883,3 @@ List of tickers of the stocks in the required index.
     ...
 ]
 ```
-## License
-
-The Stock Data Python client is licensed under the
-[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
