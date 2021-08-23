@@ -1,6 +1,5 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
+
 from latticestockdataclient.valuation import (
     cost_of_equity,
     enterprise_value,
