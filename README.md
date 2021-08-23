@@ -1,4 +1,4 @@
-# StockData Python Client
+# Lattice Stock Data Python Client
 
 An user friendly library to fetch data related to stock market in no time.
 
@@ -147,7 +147,7 @@ pip install -r requirements.txt
 
 ## License
 
-The Stock Data Python client is licensed under the
+`LatticeStockDataClient` is licensed under the
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Usage
