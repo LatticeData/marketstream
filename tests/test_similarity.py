@@ -1,6 +1,4 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
 
 from latticestockdataclient.similarity import (
     business_description_similarity,
