@@ -1,6 +1,5 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
+
 from latticestockdataclient.stock import (
     company_profile,
     quote,
