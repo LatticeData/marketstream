@@ -87,20 +87,21 @@ def nyse_arca_composition():
     return get_json("/market/index/nyse-arca-major-market-index").get("stocks")
 
 @daily_cache
-def nyse_market_composite():
-    return get_json("/market/index/nyse-market-composite").get("stocks")
-
 def s_and_p_400():
     return get_json("/market/index/s-and-p-four-hundred").get("stocks")
 
+@daily_cache
 def s_and_p_100():
     return get_json("/market/index/s-and-p-one-hundred").get("stocks")
 
+@daily_cache
 def s_and_p_global_100():
     return get_json("/market/index/s-and-p-global-one-hundred").get("stocks")
 
+@daily_cache
 def russel_2000_composition():
     return get_json("/market/index/russel-two-thousand").get("stocks")
 
+@daily_cache
 def niftybank():
     return get_json("/market/index/niftybank").get("stocks")
