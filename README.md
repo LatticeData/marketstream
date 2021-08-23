@@ -1,6 +1,6 @@
 # StockData Python Client
 
-`LatticeStockDataClient` is a python library for the [Lattice Stock Market Data API](https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data). It allows rapid stock market data-driven pipeline development easily. For details of each endpoints behavior, please see below.
+An user friendly library to fetch data related to stock market in no time.
 
 ## Contents
 
@@ -9,7 +9,6 @@
     - [Installation](#Installation)
     - [API Authentication](#API-Authentication)
     - [Dependencies](#Dependencies)
-  - [License](#license)
   - [Usage](#Usage)
     - [Category: Buzz](#category-buzz)
       - [Function: news_sentiment](#function-news_sentiment)
@@ -110,11 +109,12 @@
       - [Function: nikkei225_composition](#function-nikkei225_composition)
       - [Function: omx_nordic_composition](#function-omx_nordic_composition)
       - [Function: nyse_arca_composition](#function-nyse_arca_composition)
-      - [Function: nyse_market_composite](#function-nyse_market_composite)
       - [Function: s_and_p_400](#function-s_and_p_400)
       - [Function: s_and_p_100](#function-s_and_p_100)
       - [Function: s_and_p_global_100](#function-s_and_p_global_100)
       - [Function: niftybank](#function-niftybank)
+  - [License](#license)
+
 
 ## Overview
 ## Setup
@@ -143,11 +143,6 @@ These are listed in the `requirements.txt` file. Install them using pip:
 ```bash
 pip install -r requirements.txt
 ```
-## License
-
-The Stock Data Python client is licensed under the
-[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-
 ## Usage
 ### Category: Buzz
 This package provides online buzz data about stocks, pulled from news outlets and social media.
@@ -2798,30 +2793,6 @@ List of tickers of the stocks in the required index.
     ...
 ]
 ```
-#### Function: `nyse_market_composite`
-```bash
-nyse_market_composite()
-```
-##### Arguments:
-None
-##### Return value:
-List of tickers of the stocks in the required index.
-##### Example:
-```bash
-
-```
-#### Function: `s_and_p_400`
-```bash
-s_and_p_400()
-```
-##### Arguments:
-None
-##### Return value:
-List of tickers of the stocks in the required index.
-##### Example:
-```bash
-
-```
 #### Function: `s_and_p_100`
 ```bash
 s_and_p_100()
@@ -2832,7 +2803,19 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
-
+>>> from indices import s_and_p_100
+>>> pprint(s_and_p_100())
+[
+    'AAPL',
+    'ABBV',
+    'ABT',
+    'ACN',
+    'ADBE',
+    'AIG',
+    'AMGN',
+    'AMT',
+    ...
+]
 ```
 #### Function: `s_and_p_global_100`
 ```bash
@@ -2844,7 +2827,18 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
-
+>>> from indices import s_and_p_global_100
+>>> pprint(s_and_p_global_100())
+[
+    'MMM',
+    'ABT',
+    'AGN',
+    'ALV',
+    'AAL',
+    'G',
+    'AZN',
+    ...
+]
 ```
 #### Function: `russel_2000_composition`
 ```bash
@@ -2856,7 +2850,9 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
-
+>>> from indices import russel_2000_composition
+>>> pprint(russel_2000_composition())
+['ACRX', 'ADTN', 'DNLI', 'DORM', 'ESTE', 'EVER', 'FULT', 'TLYS', 'WK']
 ```
 #### Function: `niftybank`
 ```bash
@@ -2868,6 +2864,19 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
-
+>>> from indices import niftybank
+>>> pprint(niftybank())
+[
+    'AXISBANK',
+    'BANDHANBNK',
+    'BANKBARODA',
+    'FEDERALBNK',
+    'HDFCBANK',
+    'ICICIBANK',
+    ...
+]
 ```
+## License
 
+The Stock Data Python client is licensed under the
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
