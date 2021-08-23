@@ -1,6 +1,4 @@
 import pytest
-import sys
-sys.path.insert(0, '../latticestockdataclient/')
 
 from latticestockdataclient.indices import (
     s_and_p_composition,
@@ -24,7 +22,6 @@ from latticestockdataclient.indices import (
     nikkei225_composition,
     omx_nordic_composition,
     nyse_arca_composition,
-    nyse_market_composite,
     s_and_p_400,
     s_and_p_100,
     s_and_p_global_100,
@@ -33,7 +30,7 @@ from latticestockdataclient.indices import (
 )
 
 
-def index(data, expected_tickers, min_count=10):
+def index(data, expected_tickers, min_count=8):
     return (
         len(data) >= min_count
         and sum([ticker in data for ticker in expected_tickers]) == len(expected_tickers)
@@ -110,7 +107,7 @@ def test_phlx_semi_composition():
 
 def test_phlx_gold_composition():
     data = phlx_gold_composition()
-    assert index(data, ["FR", "GOLD"])
+    assert index(data, ['BVN', 'CDER'])
 
 def test_nikkei225_composition():
     data = nikkei225_composition()
@@ -124,26 +121,22 @@ def test_nyse_arca_composition():
     data = nyse_arca_composition()
     assert index(data, ["MSFT", "PG"])
 
-def test_nyse_market_composite():
-    data = nyse_market_composite()
-    assert index(data, ["AMPE", "ASXC"])
-
 def test_s_and_p_400():
     data = s_and_p_400()
-    assert index(data, [])
+    assert index(data, ["BXS", "BYD"], 350)
 
 def test_s_and_p_100():
     data = s_and_p_100()
-    assert index(data, [])
+    assert index(data, ["COF", "COP"], 80)
 
-#def test_s_and_p_global_100():
- #   data = s_and_p_global_100()
-  #  assert index(data, [])
+def test_s_and_p_global_100():
+    data = s_and_p_global_100()
+    assert index(data, ['ALV', 'AAL'], 60)
 
-#def test_russel_2000_composition():
- #   data = russel_2000_composition()
-  #  assert index(data, [])
+def test_russel_2000_composition():
+    data = russel_2000_composition()
+    assert index(data, ["ADTN", "DNLI"])
 
-#def test_niftybank():
- #   data = niftybank()
-  #  assert index(data, [])
+def test_niftybank():
+    data = niftybank()
+    assert index(data, ["BANDHANBNK", "BANKBARODA"])
