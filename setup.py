@@ -7,7 +7,7 @@ setuptools.setup(
     name="lattice-stocks-data",
     version="1.0.1",
 
-    description="An API for gathering RapidAPI stock info",
+    description="A simple interface for pulling stock market data through the Lattice Stock Market Data API",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://lattice.dev/",
