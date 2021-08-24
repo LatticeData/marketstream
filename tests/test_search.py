@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.search import (
+from stocksdata.search import (
     wikipedia_url_to_ticker_symbol,
     #stock_screener,
     isin_to_ticker_symbol,

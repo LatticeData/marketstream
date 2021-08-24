@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.exchanges import (
+from stocksdata.exchanges import (
     all_public_companies,
     nasdaq_exchange_composition,
     nyse_composition,

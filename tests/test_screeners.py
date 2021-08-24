@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.screeners import (
+from stocksdata.screeners import (
     conservative_foreign_funds,
     most_actives,
     most_shorted_stocks,

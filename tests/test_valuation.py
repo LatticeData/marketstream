@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.valuation import (
+from stocksdata.valuation import (
     cost_of_equity,
     enterprise_value,
     historical_valuation_measures,

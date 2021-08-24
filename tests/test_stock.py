@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.stock import (
+from stocksdata.stock import (
     company_profile,
     quote,
     historical_prices,

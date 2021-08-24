@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.indices import (
+from stocksdata.indices import (
     s_and_p_composition,
     nasdaq_composition,
     russel_one_thousand_composition,

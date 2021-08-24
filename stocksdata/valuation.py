@@ -1,5 +1,5 @@
-from latticestockdataclient.util.ttlcache import daily_cache, hourly_cache
-from latticestockdataclient.util.get import *
+from stocksdata.util.ttlcache import daily_cache, hourly_cache
+from stocksdata.util.get import *
 
 
 @hourly_cache

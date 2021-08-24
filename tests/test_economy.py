@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.economy import (
+from stocksdata.economy import (
     risk_free_rate,
     last_year_market_return
 )

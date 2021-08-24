@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.financials import (
+from stocksdata.financials import (
     annual_balance_sheet,
     quarterly_balance_sheet,
     latest_annual_balance_sheet,

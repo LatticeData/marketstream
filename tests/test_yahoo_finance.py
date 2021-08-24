@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.yahoo_finance import (
+from stocksdata.yahoo_finance import (
     raw_quote,
     raw_historical_prices,
     technical_insights,

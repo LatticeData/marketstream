@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.similarity import (
+from stocksdata.similarity import (
     business_description_similarity,
     industry_similarity,
     stock_price_correlation

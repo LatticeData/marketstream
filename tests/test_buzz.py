@@ -1,6 +1,6 @@
 import pytest
 
-from latticestockdataclient.buzz import (
+from stocksdata.buzz import (
     wallstreetbets_mentions,
     news_sentiment,
     news,

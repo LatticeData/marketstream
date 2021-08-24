@@ -1,5 +1,5 @@
-from latticestockdataclient.util.ttlcache import daily_cache
-from latticestockdataclient.util.get import *
+from stocksdata.util.ttlcache import daily_cache
+from stocksdata.util.get import *
 
 def wikipedia_url_to_ticker_symbol(wikipedia_url):
     params = {"wikipedia_url": wikipedia_url}
