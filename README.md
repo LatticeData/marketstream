@@ -1,4 +1,4 @@
-# Lattice Stock Data Python Client
+# Lattice Stock Market Data Python Client
 
 An user friendly library to fetch data related to stock market in no time.
 
@@ -122,10 +122,10 @@ An user friendly library to fetch data related to stock market in no time.
 ### Installation
 The easiest way to install this package is using pip:
 ```bash
-pip install LatticeStockDataClient
+pip install lattice-stocks-data
 ```
 ### API Authentication
-To successfully use this library you will need an API key for the [Stock Data API](https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/) that powers it. Navigate to [RapidAPI](https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/) to sign up for a free API key and then save it to an environment variable called `STOCK_DATA_X_RAPID_API_KEY` in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.
+To successfully use this library you will need an API key for the [Lattice Stock Market Data API](https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/) that powers it. Navigate to [RapidAPI](https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/) to sign up for a free API key and then save it to an environment variable called `STOCK_DATA_X_RAPID_API_KEY` in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.
 
 ### Dependencies
 This library relies on the following Python libraries:
@@ -147,7 +147,7 @@ pip install -r requirements.txt
 
 ## License
 
-`LatticeStockDataClient` is licensed under the
+`lattice-stocks-data` is licensed under the
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Usage
