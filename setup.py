@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="LatticeStockDataClient",
-    version="0.0.20",
+    version="1.0.0",
 
     description="An API for gathering RapidAPI stock info",
     py_modules = ["algorithms","buzz","economy","exchanges","financials","indices","market","screeners","search","similarity",
