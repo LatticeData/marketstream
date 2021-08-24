@@ -10,7 +10,7 @@ setuptools.setup(
     
     author="ashkon@lattice.dev",
     package_dir={
-        "": "./latticestockdataclient",
+        "": "./stocksdata",
     },
     
     tests_require=['pytest'],
