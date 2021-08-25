@@ -1,15 +1,13 @@
 import os
 import json
-from bson import json_util
 import logging
-import requests
-import settings
-from datetime import datetime, timedelta
-from functools import wraps
 import requests
 from io import StringIO
 
 import pandas as pd
+from dotenv import load_dotenv 
+
+load_dotenv()
 
 def get(url_path, params=None):
 	if not params: params = {}
