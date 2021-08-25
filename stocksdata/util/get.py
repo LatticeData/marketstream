@@ -13,10 +13,11 @@ import pandas as pd
 
 def get(url_path, params=None):
 	if not params: params = {}
-	url = "https://%s/%s" % (os.environ["STOCK_DATA_X_RAPID_API_HOST"].rstrip("/"), url_path.lstrip("/"))
+	host = "stock-market-data.p.rapidapi.com"
+	url = "https://%s/%s" % (host.rstrip("/"), url_path.lstrip("/"))
 	headers = {
 		'x-rapidapi-key': os.environ["STOCK_DATA_X_RAPID_API_KEY"],
-		'x-rapidapi-host': os.environ["STOCK_DATA_X_RAPID_API_HOST"]
+		'x-rapidapi-host': host
 	}
 	return requests.get(url, headers=headers, params=params).text
 
