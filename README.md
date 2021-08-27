@@ -166,7 +166,7 @@ Name | Type | Description | Optional | Default Vaue
 Returns the sentiment for the given stock in recent news articles.
 ##### Example:
 ```bash
->>> from buzz import news_sentiment
+>>> from stocksdata.buzz import news_sentiment
 >>> pprint(news_sentiment("AAPL"))
 {
     'sentiment_score': 0.07747582205029015,
@@ -194,7 +194,7 @@ Name | Type | Description | Optional | Default Vaue
 News related to the required stock.
 ##### Example:
 ```bash
->>> from buzz import news
+>>> from stocksdata.buzz import news
 >>> pprint(news("AAPL"))
 {
     'published_date': '2021-07-24T07:04:03',
@@ -223,7 +223,7 @@ ticker_symbol | str | Ticker of the stock | False
 Twitter Sentiment score of the required stock.
 ##### Example:
 ```bash
->>> from buzz import twitter_sentiment
+>>> from stocksdata.buzz import twitter_sentiment
 >>> pprint(twitter_sentiment("AAPL"))
 {'sentiment_score': 0.0, 'source_tweets': []}
 ```
@@ -237,7 +237,7 @@ NULL
 Fear and Greed index of the market
 ##### Example:
 ```bash
->>> from buzz import fear_and_greed_index
+>>> from stocksdata.buzz import fear_and_greed_index
 >>> pprint(fear_and_greed_index())        
 {   
     '1 Month Ago': {'label': 'Fear', 'score': '43'},
@@ -259,7 +259,7 @@ Name | Type | Description | Optional | Default Vaue
 Wallstreetbets mentions of the required stocks required stock.
 ##### Example:
 ```bash
->>> from buzz import wallstreetbets_mentions
+>>> from stocksdata.buzz import wallstreetbets_mentions
 >>> pprint(wallstreetbets_mentions("AAPL"))
 None
 ```
@@ -275,7 +275,7 @@ None
 Risk free rate of the market.
 ##### Example:
 ```bash
->>> from economy import risk_free_rate
+>>> from stocksdata.economy import risk_free_rate
 >>> pprint(risk_free_rate())           
 0.00043588067008681897
 ```
@@ -289,7 +289,7 @@ None
 Last year return of the market.
 ##### Example:
 ```bash
->>> from economy import last_year_market_return
+>>> from stocksdata.economy import last_year_market_return
 >>> pprint(last_year_market_return()) 
 0.369336438702895
 ```
@@ -305,7 +305,7 @@ None
 Tickers of all public companies.
 ##### Example:
 ```bash
->>> from exchanges import all_public_companies
+>>> from stocksdata.exchanges import all_public_companies
 >>> pprint(all_public_companies())    
 [    
     'WIX',
@@ -335,7 +335,7 @@ None
 Tickers of all stocks listed in Nasdaq exchange.
 ##### Example:
 ```bash
->>> from exchanges import nasdaq_exchange_composition
+>>> from stocksdata.exchanges import nasdaq_exchange_composition
 >>> pprint(nasdaq_exchange_composition())   
 [
     'PPH',
@@ -362,7 +362,7 @@ None
 Tickers of all stocks listed in New York Stock Exchange.
 ##### Example:    
 ```bash
->>> from exchanges import nyse_composition
+>>> from stocksdata.exchanges import nyse_composition
 >>> pprint(nyse_composition())
 [    
     'TPH',
@@ -389,7 +389,7 @@ None
 Tickers of all stocks listed in Shanghai Stock Exchange
 ##### Example:
 ```bash
->>> from exchanges import  shanghai_exchange_composition
+>>> from stocksdata.exchanges import  shanghai_exchange_composition
 >>> pprint(shanghai_exchange_composition()) 
 [
     '000001',
@@ -422,7 +422,7 @@ None
 Tickers of all stocks listed in Hong Kong Stock Exchange
 ##### Example:
 ```bash
->>> from exchanges import hong_kong_exchange_composition
+>>> from stocksdata.exchanges import hong_kong_exchange_composition
 >>> pprint(hong_kong_exchange_composition())
 [
     '0005',
@@ -458,7 +458,7 @@ None
 Tickers of all stocks listed in London Stock Exchange
 ##### Example:
 ```bash
->>> from exchanges import london_exchange_composition
+>>> from stocksdata.exchanges import london_exchange_composition
 >>> pprint(london_exchange_composition())
 [
     'GWI',
@@ -499,7 +499,7 @@ ticker_symbol | str | Ticker of the stock | False
 Annual balance sheet of recent years for the required stock
 ##### Example:
 ```bash
->>> from financials import annual_balance_sheet
+>>> from stocksdata.financials import annual_balance_sheet
 >>> pprint(annual_balance_sheet("AAPL"))
 {   
     '1506729600000': {
@@ -542,7 +542,7 @@ ticker_symbol | str | Ticker of the stock | False
 Quarterly balance sheet of recent quarters for the required stock
 ##### Example:
 ```bash
->>> from financials import quarterly_balance_sheet
+>>> from stocksdata.financials import quarterly_balance_sheet
 >>> pprint(quarterly_balance_sheet("AAPL"))
 {
     '1601078400000': {
@@ -585,7 +585,7 @@ ticker_symbol | str | Ticker of the stock | False
 Latest annual balance sheet of the required stock.
 ##### Example:
 ```bash
->>> from financials import latest_annual_balance_sheet
+>>> from stocksdata.financials import latest_annual_balance_sheet
 >>> pprint(latest_annual_balance_sheet("AAPL")) 
 {
     'current_annual_balance_sheet': {
@@ -629,7 +629,7 @@ ticker_symbol | str | Ticker of the stock | False
 Latest quarterly balance sheet of the required stock
 ##### Example:
 ```bash
->>> from financials import latest_quarterly_balance_sheet
+>>> from stocksdata.financials import latest_quarterly_balance_sheet
 >>> pprint(latest_quarterly_balance_sheet("AAPL")) 
 {   
     'current_quarterly_balance_sheet': {
@@ -673,7 +673,7 @@ ticker_symbol | str | Ticker of the stock | False
 Annual income statement of recent years for the required stock
 ##### Example:
 ```bash
->>> from financials import annual_income_statement       
+>>> from stocksdata.financials import annual_income_statement       
 >>> pprint(annual_income_statement("AAPL"))        
 {   
     '1506729600000': {
@@ -718,7 +718,7 @@ ticker_symbol | str | Ticker of the stock | False
 Quarterly income statement of recent years for the required stock
 ##### Example:
 ```bash
->>> from financials import quarterly_income_statement
+>>> from stocksdata.financials import quarterly_income_statement
 >>> pprint(quarterly_income_statement("AAPL"))
 {
     '1601078400000': {
@@ -763,7 +763,7 @@ ticker_symbol | str | Ticker of the stock | False
 Latest annual income statement for the required stock
 ##### Example:
 ```bash
->>> from financials import quarterly_income_statement
+>>> from stocksdata.financials import quarterly_income_statement
 >>> pprint(latest_annual_income_statement("AAPL")) 
 {
     'current_annual_income_statement': {
@@ -809,7 +809,7 @@ ticker_symbol | str | Ticker of the stock | False
 Latest quarterly income statement for the required stock.
 ##### Example:
 ```bash
->>> from financials import latest_quarterly_income_statement
+>>> from stocksdata.financials import latest_quarterly_income_statement
 >>> pprint(latest_quarterly_income_statement("AAPL"))
 {
     'current_quarterly_income_statement': {
@@ -853,7 +853,7 @@ conservative_foreign_funds()
 Tickers of all conservative foreign funds.
 ##### Example:
 ```bash
->>> from screeners import conservative_foreign_funds
+>>> from stocksdata.screeners import conservative_foreign_funds
 >>> pprint(conservative_foreign_funds())
 [   
     'RERBX',
@@ -879,7 +879,7 @@ None
 Tickers of most active stocks.
 ##### Example:
 ```bash
->>> from screeners import most_actives              
+>>> from stocksdata.screeners import most_actives              
 >>> pprint(most_actives())               
 [
     'AMD',
@@ -908,7 +908,7 @@ None
 Tickers of most shorted stocks.
 ##### Example:
 ```bash
->>> from screeners import most_shorted_stocks
+>>> from stocksdata.screeners import most_shorted_stocks
 >>> pprint(most_actives())
 [
     'FNMAS',
@@ -941,7 +941,7 @@ None
 Tickers of stocks having undervalued growth.
 ##### Example:
 ```bash
->>> from screeners import undervalued_growth_stocks
+>>> from stocksdata.screeners import undervalued_growth_stocks
 >>> pprint(undervalued_growth_stocks()) 
 [
     'BAC',
@@ -970,7 +970,7 @@ None
 List of tickers of stocks..
 ##### Example:
 ```bash
->>> from screeners import growth_technology_stocks 
+>>> from stocksdata.screeners import growth_technology_stocks 
 >>> pprint(growth_technology_stocks())  
 [
     'AMD',
@@ -1000,7 +1000,7 @@ None
 List of tickers of stocks.
 ##### Example:
 ```bash
->>> from screeners import day_gainers             
+>>> from stocksdata.screeners import day_gainers             
 >>> pprint(day_gainers())              
 [
     'CFEIY',
@@ -1031,7 +1031,7 @@ None
 List of tickers of stocks.
 ##### Example:
 ```bash
->>> from screeners import day_losers 
+>>> from stocksdata.screeners import day_losers 
 >>> pprint(day_losers()) 
 [
     'SAVA',
@@ -1063,7 +1063,7 @@ None
 List of tickers of stocks.
 ##### Example:
 ```bash
->>> from screeners import undervalued_large_caps
+>>> from stocksdata.screeners import undervalued_large_caps
 >>> pprint(undervalued_large_caps()) 
 [   
     'F',  
@@ -1088,7 +1088,7 @@ None
 List of tickers of stocks.
 ##### Example:
 ```bash
->>> from screeners import aggresive_small_caps 
+>>> from stocksdata.screeners import aggresive_small_caps 
 >>> pprint(aggresive_small_caps())  
 [
     'LC',
@@ -1115,7 +1115,7 @@ None
 List of tickers of stocks.
 ##### Example:
 ```bash
->>> from screeners import small_cap_gainers   
+>>> from stocksdata.screeners import small_cap_gainers   
 >>> pprint(small_cap_gainers())    
 [
     'LLNW',
@@ -1142,7 +1142,7 @@ None
 List of tickers of top mutual funds.
 ##### Example:
 ```bash
->>> from screeners import top_mutual_funds
+>>> from stocksdata.screeners import top_mutual_funds
 >>> pprint(top_mutual_funds())
 [
     'RYLCX',
@@ -1173,7 +1173,7 @@ None
 List of tickers.
 ##### Example:
 ```bash
->>> from screeners import portfolio_anchors
+>>> from stocksdata.screeners import portfolio_anchors
 >>> pprint(portfolio_anchors())
 [
     'VSTSX',
@@ -1200,7 +1200,7 @@ None
 List of tickers.
 ##### Example:
 ```bash
->>> from screeners import solid_large_growth_funds
+>>> from stocksdata.screeners import solid_large_growth_funds
 >>> pprint(solid_large_growth_funds()) 
 [
     'RGABX',
@@ -1228,7 +1228,7 @@ None
 List of tickers.
 ##### Example:
 ```bash
->> from screeners import solid_midcap_growth_funds
+>> from stocksdata.screeners import solid_midcap_growth_funds
 >>> pprint(solid_midcap_growth_funds()) 
 [
     'RRMGX',
@@ -1254,7 +1254,7 @@ None
 List of tickers.
 ##### Example:
 ```bash
->>> from screeners import high_yield_bonds         
+>>> from stocksdata.screeners import high_yield_bonds         
 >>> pprint(high_yield_bonds())             
 [
     'BHYSX',
@@ -1284,7 +1284,7 @@ wikipedia_url | str | wikipedia url of the stock | False
 Ticker symbol.
 ##### Example:
 ```bash
->>> from search import wikipedia_url_to_ticker_symbol
+>>> from stocksdata.search import wikipedia_url_to_ticker_symbol
 >>> pprint(wikipedia_url_to_ticker_symbol("https://en.wikipedia.org/wiki/Apple_Inc."))
 'AAPL'
 ```
@@ -1300,7 +1300,7 @@ isin | str | isin code | False
 Ticker symbol.
 ##### Example:
 ```bash
->>> from search import isin_to_ticker_symbol         
+>>> from stocksdata.search import isin_to_ticker_symbol         
 >>> pprint(isin_to_ticker_symbol("US0378331005"))
 "AAPL"
 ```
@@ -1316,7 +1316,7 @@ company_name | str | Name of the company | False
 Ticker symbol.
 ##### Example:
 ```bash   
->>> from search import company_name_to_ticker_symbol
+>>> from stocksdata.search import company_name_to_ticker_symbol
 >>> pprint(company_name_to_ticker_symbol("Apple"))
 "AAPL"
 ```
@@ -1335,7 +1335,7 @@ ticker_symbol2 | str | Ticker symbol | False
 Similarity score.
 ##### Example:
 ```bash   
->>> from similarity import business_description_similarity
+>>> from stocksdata.similarity import business_description_similarity
 >>> business_description_similarity("AAPL","GOOGL")
 0.12793313483581853
 ```
@@ -1352,7 +1352,7 @@ ticker_symbol2 | str | Ticker symbol | False
 Similarity score.
 ##### Example:
 ```bash   
->>> from similarity import industry_similarity            
+>>> from stocksdata.similarity import industry_similarity            
 >>> pprint(industry_similarity("AAPL","GOOGL"))     
 0.0
 ```
@@ -1369,7 +1369,7 @@ ticker_symbol2 | str | Ticker symbol | False
 Similarity score.
 ##### Example:
 ```bash   
->>> from similarity import stock_price_correlation
+>>> from stocksdata.similarity import stock_price_correlation
 >>> pprint(stock_price_correlation("AAPL","GOOGL")) 
 0.87
 ```
@@ -1387,7 +1387,7 @@ ticker_symbol | str | Ticker of the stock | False
 Company profile description.
 ##### Example:
 ```bash
->>> from stock import company_profile
+>>> from stocksdata.stock import company_profile
 >>> pprint(company_profile("AAPL"))
 {
     'company_profile': {
@@ -1419,7 +1419,7 @@ ticker_symbol | str | Ticker of the stock | False
 Quote description.
 ##### Example:
 ```bash
->>> from stock import quote
+>>> from stocksdata.stock import quote
 >>> pprint(quote("AAPL"))           
 {
     'date': '2021-07-31T10:14:45.973997',
@@ -1486,7 +1486,7 @@ ticker_symbol | str | Ticker of the stock | False
 Key stats of the company.
 ##### Example:
 ```bash
->>> from stock import key_stats  
+>>> from stocksdata.stock import key_stats  
 >>> pprint(key_stats("AAPL")) 
 {
     'date': '2021-07-31T10:19:45.254202',
@@ -1526,7 +1526,7 @@ ticker_symbol | str | Ticker of the stock | False
 cost of equity of the required ticker.
 ##### Example:
 ```bash
->>> from valuation import cost_of_equity
+>>> from stocksdata.valuation import cost_of_equity
 >>> pprint(cost_of_equity("AAPL")) 
 0.41513435907161994
 ```
@@ -1542,7 +1542,7 @@ ticker_symbol | str | Ticker of the stock | False
 Enterprise value of the required ticker.
 ##### Example:
 ```bash
->>> from valuation import enterprise_value
+>>> from stocksdata.valuation import enterprise_value
 >>> pprint(enterprise_value("AAPL"))
 2663567177344.0
 ```
@@ -1558,7 +1558,7 @@ ticker_symbol | str | Ticker of the stock | False
 Historical valuation measue of the required ticker.
 ##### Example:
 ```bash
->>> from valuation import historical_valuation_measures                
+>>> from stocksdata.valuation import historical_valuation_measures                
 >>> pprint(historical_valuation_measures("AAPL")) 
 {   
     '1593475200000': {
@@ -1598,7 +1598,7 @@ ticker_symbol | str | Ticker of the stock | False
 Valuation measure of the required ticker.
 ##### Example:
 ```bash
->>> from valuation import valuation_measures
+>>> from stocksdata.valuation import valuation_measures
 >>> pprint(valuation_measures("AAPL"))
 {
     'Enterprise Value': 2470000000000.0,
@@ -1627,7 +1627,7 @@ Name | Type | Description | Optional | Default Vaue
 Details for the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import raw_quote
+>>> from stocksdata.yahoo_finance import raw_quote
 >>> pprint(raw_quote("AAPL"))
 {
     'currency': 'USD',
@@ -1660,7 +1660,7 @@ Name | Type | Description | Optional | Default Vaue
 Historical prices for the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import raw_historical_prices
+>>> from stocksdata.yahoo_finance import raw_historical_prices
 >>> pprint(raw_historical_prices("AAPL"))
 {        
         {
@@ -1695,7 +1695,7 @@ Name | Type | Description | Optional | Default Vaue
 Technical insights of the required stocks
 ##### Example:
 ```bash
->>> from yahoo_finance import technical_insights
+>>> from stocksdata.yahoo_finance import technical_insights
 >>> pprint(technical_insights("AAPL")) 
 {
     'companySnapshot': {
@@ -1732,7 +1732,7 @@ Name | Type | Description | Optional | Default Vaue
 Options contracts of the required stock..
 ##### Example:
 ```bash
->>> from yahoo_finance import options_contracts
+>>> from stocksdata.yahoo_finance import options_contracts
 >>> pprint(options_contracts("AAPL"))
 {
             {
@@ -1779,7 +1779,7 @@ Name | Type | Description | Optional | Default Vaue
 Return price of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import price            
+>>> from stocksdata.yahoo_finance import price            
 >>> pprint(price("AAPL"))             
 {
     'averageDailyVolume10Day': {
@@ -1808,7 +1808,7 @@ Name | Type | Description | Optional | Default Vaue
 Summary of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import summary_detail
+>>> from stocksdata.yahoo_finance import summary_detail
 >>> pprint(summary_detail("AAPL")) 
 {
     'algorithm': None,
@@ -1840,7 +1840,7 @@ Name | Type | Description | Optional | Default Vaue
 Statistics of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import key_statistics
+>>> from stocksdata.yahoo_finance import key_statistics
 >>> pprint(key_statistics("AAPL")) 
 {
     '52WeekChange': {'fmt': '33.89%', 'raw': 0.33893287},
@@ -1871,7 +1871,7 @@ Name | Type | Description | Optional | Default Vaue
 Company profile of the required stock.
 ##### Example:
 ```bash
->> from yahoo_finance import company_profile
+>> from stocksdata.yahoo_finance import company_profile
 >>> pprint(company_profile("AAPL")) 
 {
     'address1': 'One Apple Park Way',
@@ -1896,7 +1896,7 @@ Name | Type | Description | Optional | Default Vaue
 Earnings of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import earnings       
+>>> from stocksdata.yahoo_finance import earnings       
 >>> pprint(earnings("AAPL"))           
 {   
     'earningsChart': {
@@ -1929,7 +1929,7 @@ Name | Type | Description | Optional | Default Vaue
 Financial data of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import financial_data
+>>> from stocksdata.yahoo_finance import financial_data
 >>> pprint(financial_data("AAPL")) 
 {
     'currentPrice': {'fmt': '145.52', 'raw': 145.52},
@@ -1964,7 +1964,7 @@ Name | Type | Description | Optional | Default Vaue
 Upgrade downgrade history of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import upgrade_downgrade_history
+>>> from stocksdata.yahoo_finance import upgrade_downgrade_history
 >>> pprint(financial_data("AAPL"))
 {        
         {
@@ -1997,7 +1997,7 @@ Name | Type | Description | Optional | Default Vaue
 ESG score of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import esg_scores    
+>>> from stocksdata.yahoo_finance import esg_scores    
 >>> pprint(esg_scores("AAPL"))                
 {
     'adult': False,
@@ -2026,7 +2026,7 @@ Name | Type | Description | Optional | Default Vaue
 Events details of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import esg_scores    
+>>> from stocksdata.yahoo_finance import esg_scores    
 >>> pprint(esg_scores("AAPL"))                
 {
     'adult': False,
@@ -2056,7 +2056,7 @@ Name | Type | Description | Optional | Default Vaue
 Annual income statement of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import annual_income_statement
+>>> from stocksdata.yahoo_finance import annual_income_statement
 >>> pprint(annual_income_statement("AAPL")) 
 [
     {
@@ -2088,7 +2088,7 @@ Name | Type | Description | Optional | Default Vaue
 Quarterly income statement of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import quarterly_income_statement
+>>> from stocksdata.yahoo_finance import quarterly_income_statement
 >>> pprint(quarterly_income_statement("AAPL")) 
 [
     {
@@ -2120,7 +2120,7 @@ Name | Type | Description | Optional | Default Vaue
 Annual balance sheet of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import annual_balance_sheet      
+>>> from stocksdata.yahoo_finance import annual_balance_sheet      
 >>> pprint(annual_balance_sheet("AAPL"))           
 [
     {
@@ -2155,7 +2155,7 @@ Name | Type | Description | Optional | Default Vaue
 Quarterly balance sheet of the required stock.
 ##### Example:
 ```bash
->>> from yahoo_finance import quarterly_balance_sheet
+>>> from stocksdata.yahoo_finance import quarterly_balance_sheet
 >>> pprint(quarterly_balance_sheet("AAPL")) 
 [
     {
@@ -2189,7 +2189,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import s_and_p_composition          
+>>> from stocksdata.indices  import s_and_p_composition          
 >>> pprint(s_and_p_composition())            
 [
     'A',
@@ -2234,7 +2234,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import nasdaq_composition 
+>>> from stocksdata.indices  import nasdaq_composition 
 >>> pprint(nasdaq_composition())  
 [
     'AAPL',
@@ -2267,7 +2267,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import russel_one_thousand_composition
+>>> from stocksdata.indices  import russel_one_thousand_composition
 >>> pprint(russel_one_thousand_composition()) 
 [   
     'A',   
@@ -2303,7 +2303,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import amex_oil_composition
+>>> from stocksdata.indices  import amex_oil_composition
 >>> pprint(amex_oil_composition())            
 [
     'BP',
@@ -2330,7 +2330,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import djia_composition    
+>>> from stocksdata.indices  import djia_composition    
 >>> pprint(djia_composition())            
 [
     'AAPL',
@@ -2357,7 +2357,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import bbc_global_composition
+>>> from stocksdata.indices  import bbc_global_composition
 >>> pprint(bbc_global_composition()) 
 [
     '2',
@@ -2386,7 +2386,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import ibovespa_composition  
+>>> from stocksdata.indices  import ibovespa_composition  
 >>> pprint(ibovespa_composition())   
 [
     'ABEV3',
@@ -2413,7 +2413,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import ftse100_composition 
+>>> from stocksdata.indices  import ftse100_composition 
 >>> pprint(ftse100_composition())  
 [
     'AAL',
@@ -2445,7 +2445,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import ftse250_composition
+>>> from stocksdata.indices  import ftse250_composition
 >>> pprint(ftse250_composition()) 
 [   
     '3IN', 
@@ -2477,7 +2477,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import nifty_fifty_composition
+>>> from stocksdata.indices  import nifty_fifty_composition
 >>> pprint(nifty_fifty_composition()) 
 [
     'BAJAJ-AUTO.NS',
@@ -2504,7 +2504,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import djgt_fifty_composition 
+>>> from stocksdata.indices  import djgt_fifty_composition 
 >>> pprint(djgt_fifty_composition())  
 [
     '7203',
@@ -2534,7 +2534,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import dax_thirty_composition
+>>> from stocksdata.indices  import dax_thirty_composition
 >>> pprint(dax_thirty_composition()) 
 [
     '1COV.DE',
@@ -2565,7 +2565,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import euro100_composition   
+>>> from stocksdata.indices  import euro100_composition   
 >>> pprint(euro100_composition())    
 [
     'AC',
@@ -2594,7 +2594,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import djta_composition   
+>>> from stocksdata.indices  import djta_composition   
 >>> pprint(djta_composition())    
 [   
     'AAL', 
@@ -2621,7 +2621,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import djua_composition
+>>> from stocksdata.indices  import djua_composition
 >>> pprint(djua_composition()) 
 [
     'AEP',
@@ -2651,7 +2651,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import nasdaq100_composition
+>>> from stocksdata.indices  import nasdaq100_composition
 >>> pprint(nasdaq100_composition()) 
 [
     'AAPL',
@@ -2679,7 +2679,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import phlx_semi_composition
+>>> from stocksdata.indices  import phlx_semi_composition
 >>> pprint(phlx_semi_composition()) 
 [
     'ASML',
@@ -2706,7 +2706,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import phlx_gold_composition
+>>> from stocksdata.indices  import phlx_gold_composition
 >>> pprint(phlx_gold_composition()) 
 [
     'ABXXF',
@@ -2733,7 +2733,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import nikkei225_composition
+>>> from stocksdata.indices  import nikkei225_composition
 >>> pprint(nikkei225_composition()) 
 [
     '1332',
@@ -2761,7 +2761,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import omx_nordic_composition
+>>> from stocksdata.indices  import omx_nordic_composition
 >>> pprint(omx_nordic_composition()) 
 [
     'ABB',
@@ -2789,7 +2789,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices  import nyse_arca_composition 
+>>> from stocksdata.indices  import nyse_arca_composition 
 >>> pprint(nyse_arca_composition())  
 [
     'AXP',
@@ -2810,7 +2810,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices import s_and_p_100
+>>> from stocksdata.indices import s_and_p_100
 >>> pprint(s_and_p_100())
 [
     'AAPL',
@@ -2834,7 +2834,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices import s_and_p_global_100
+>>> from stocksdata.indices import s_and_p_global_100
 >>> pprint(s_and_p_global_100())
 [
     'MMM',
@@ -2857,7 +2857,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices import russel_2000_composition
+>>> from stocksdata.indices import russel_2000_composition
 >>> pprint(russel_2000_composition())
 ['ACRX', 'ADTN', 'DNLI', 'DORM', 'ESTE', 'EVER', 'FULT', 'TLYS', 'WK']
 ```
@@ -2871,7 +2871,7 @@ None
 List of tickers of the stocks in the required index.
 ##### Example:
 ```bash
->>> from indices import niftybank
+>>> from stocksdata.indices import niftybank
 >>> pprint(niftybank())
 [
     'AXISBANK',
