@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="lattice-stocks-data",
-    version="1.0.21",
+    version="1.0.22",
 
     description="An API for gathering RapidAPI stock info",
     long_description=" An easy-to-use library for quick access to stock market information. Complete stock market data is available from Yahoo Finance and many other sources in one convenient package. To successfully use this library you will need an API key for the Lattice Stock Market Data API that powers it. Navigate to RapidAPI to sign up for a free API key and then save it to an environment variable called STOCK_DATA_X_RAPID_API_KEY in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.",
