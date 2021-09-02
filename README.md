@@ -1,6 +1,6 @@
 # Lattice Stock Market Data Python Client
 
-An user friendly library to fetch data related to stock market in no time.
+Comprehensive stock market data sourced from Yahoo Finance and a variety of other sources in one clean package. Provided data types include basic company information, real-time price information, financial statements, news coverage, stock similarity metrics, valuation metrics, and economic indicators.
 
 ## Contents
 
