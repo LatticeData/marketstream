@@ -1,9 +1,4 @@
-from os import path 
-import sys
-
 import setuptools
-
-here = path.abspath(path.dirname(__file__))
 
 setuptools.setup(
     name="lattice-stocks-data",
