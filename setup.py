@@ -6,11 +6,10 @@ import setuptools
 here = path.abspath(path.dirname(__file__))
 
 setuptools.setup(
-    name="latticestocksdata",
+    name="lattice-stocks-data",
     version="1.1.0",
-
-    description="An API for gathering RapidAPI stock info",
-    long_description=" An easy-to-use library for quick access to stock market information. Complete stock market data is available from Yahoo Finance and many other sources in one convenient package. To successfully use this library you will need an API key for the Lattice Stock Market Data API that powers it. Navigate to RapidAPI to sign up for a free API key and then save it to an environment variable called STOCK_DATA_X_RAPID_API_KEY in your environment. The library will automatically load that environment variable and use it to authenticate API calls made under the hood.",
+    description="Comprehensive stock market data sourced from Yahoo Finance and a variety of other sources in one clean package.",
+    long_description="Comprehensive stock market data sourced from Yahoo Finance and a variety of other sources in one clean package. Provided data types include basic company information, real-time price information, financial statements, news coverage, stock similarity metrics, valuation metrics, and economic indicators.",
     long_description_content_type="text/markdown",
     url="https://lattice.dev/products/stock-market-data",
     project_urls={
@@ -18,21 +17,13 @@ setuptools.setup(
         "Documentation" : "https://github.com/LatticeData/lattice-stocks-data/blob/master/README.md#Usage",
         "Bug Reports" : "https://github.com/LatticeData/lattice-stocks-data/issues",
         "Get your key" : "https://rapidapi.com/lattice-data-lattice-data-default/api/stock-market-data/",
-
-
     },
-
-    author="ashkon@lattice.dev",
-
-    packages=setuptools.find_packages(
-        exclude=['tests', '.circleci']),
-    package_data={
-        'latticestocksdata': [],
-    },
+    author='Lattice',
+    author_email="ashkon@lattice.dev",
+    packages=setuptools.find_packages(exclude=['tests', '.circleci']),
+    packages=['stocksdata'],
     tests_require=['pytest'],
-
     python_requires=">=3.7",
-
     classifiers=[
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
