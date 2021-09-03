@@ -114,7 +114,17 @@ Comprehensive stock market data sourced from Yahoo Finance and a variety of othe
       - [Function: s_and_p_100](#function-s_and_p_100)
       - [Function: s_and_p_global_100](#function-s_and_p_global_100)
       - [Function: niftybank](#function-niftybank)
-
+    - [Category: Indicators](#category-Indicators)
+      - [Function: sma](#function-sma)
+      - [Function: smav](#function-smav)
+      - [Function: so](#function-so)
+      - [Function: adx](#function-adx)
+      - [Function: rsi](#function-rsi)
+      - [Function: macd](#function-macd)
+      - [Function: atr](#function-atr)
+      - [Function: wilder](#function-wilder)
+      - [Function: bb](#function-bb)
+      - [Function: roc](#function-roc)
 ## Overview
 
 ## Setup
@@ -158,7 +168,7 @@ This package provides online buzz data about stocks, pulled from news outlets an
 news_sentiment(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -187,7 +197,7 @@ Returns the sentiment for the given stock in recent news articles.
 news(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 ##### Return value: 
@@ -215,7 +225,7 @@ News related to the required stock.
 twitter_sentiment(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 
@@ -252,7 +262,7 @@ Fear and Greed index of the market
 wallstreetbets_mentions(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 ##### Return value: 
@@ -492,7 +502,7 @@ Company financial statements data.
 annual_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -535,7 +545,7 @@ Annual balance sheet of recent years for the required stock
 quarterly_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -578,7 +588,7 @@ Quarterly balance sheet of recent quarters for the required stock
 latest_annual_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -622,7 +632,7 @@ Latest annual balance sheet of the required stock.
 latest_quarterly_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -666,7 +676,7 @@ Latest quarterly balance sheet of the required stock
 annual_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -711,7 +721,7 @@ Annual income statement of recent years for the required stock
 quarterly_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value: 
@@ -756,7 +766,7 @@ Quarterly income statement of recent years for the required stock
 latest_annual_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -802,7 +812,7 @@ Latest annual income statement for the required stock
 latest_quarterly_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1277,7 +1287,7 @@ Utilities for searching for stocks based on various dimensions.
 wikipedia_url_to_ticker_symbol(wikipedia_url)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 wikipedia_url | str | wikipedia url of the stock | False
 ##### Return value:
@@ -1293,7 +1303,7 @@ Ticker symbol.
 isin_to_ticker_symbol(isin)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 isin | str | isin code | False
 ##### Return value:
@@ -1309,7 +1319,7 @@ Ticker symbol.
 company_name_to_ticker_symbol(company_name)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 company_name | str | Name of the company | False
 ##### Return value:
@@ -1327,7 +1337,7 @@ Similarity measures for pairs of stocks.
 business_description_similarity(ticker_symbol1,ticker_symbol2)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol1 | str | Ticker symbol | False
 ticker_symbol2 | str | Ticker symbol | False
@@ -1344,7 +1354,7 @@ Similarity score.
 industry_similarity(ticker_symbol1,ticker_symbol2)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol1 | str | Ticker symbol | False
 ticker_symbol2 | str | Ticker symbol | False
@@ -1361,7 +1371,7 @@ Similarity score.
 stock_price_correlation(ticker_symbol1,ticker_symbol2)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol1 | str | Ticker symbol | False
 ticker_symbol2 | str | Ticker symbol | False
@@ -1380,7 +1390,7 @@ Data specific to individual stocks.
 company_profile(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1412,7 +1422,7 @@ Company profile description.
 quote(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1447,7 +1457,7 @@ Quote description.
 historical_prices(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1479,7 +1489,7 @@ Historical prices of the required stock.
 key_stats(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1519,7 +1529,7 @@ Valuation metrics related to individual stocks.
 cost_of_equity(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1535,7 +1545,7 @@ cost of equity of the required ticker.
 enterprise_value(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1551,7 +1561,7 @@ Enterprise value of the required ticker.
 historical_valuation_measures(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1591,7 +1601,7 @@ Historical valuation measue of the required ticker.
 valuation_measures(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
 ##### Return value:
@@ -1619,7 +1629,7 @@ Raw data directly from Yahoo Finance.
 raw_quote(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1652,7 +1662,7 @@ Details for the required stock.
 raw_historical_prices(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1687,7 +1697,7 @@ Historical prices for the required stock.
 technical_insights(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1724,7 +1734,7 @@ Technical insights of the required stocks
 options_contracts(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1771,7 +1781,7 @@ Options contracts of the required stock..
 price(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1800,7 +1810,7 @@ Return price of the required stock.
 summary_detail(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1832,7 +1842,7 @@ Summary of the required stock.
 key_statistics(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1863,7 +1873,7 @@ Statistics of the required stock.
 company_profile(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1888,7 +1898,7 @@ Company profile of the required stock.
 earnings(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1921,7 +1931,7 @@ Earnings of the required stock.
 financial_data(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1956,7 +1966,7 @@ Financial data of the required stock.
 upgrade_downgrade_history(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -1989,7 +1999,7 @@ Upgrade downgrade history of the required stock.
 esg_scores(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2018,7 +2028,7 @@ ESG score of the required stock.
 calendar_events(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2048,7 +2058,7 @@ Events details of the required stock.
 annual_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2080,7 +2090,7 @@ Annual income statement of the required stock.
 quarterly_income_statement(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2112,7 +2122,7 @@ Quarterly income statement of the required stock.
 annual_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2147,7 +2157,7 @@ Annual balance sheet of the required stock.
 quarterly_balance_sheet(ticker_symbol)
 ```
 ##### Arguments:
-Name | Type | Description | Optional | Default Vaue
+Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 `ticker_symbol` | `str` | Ticker of the stock | `False`
 
@@ -2882,4 +2892,421 @@ List of tickers of the stocks in the required index.
     'ICICIBANK',
     ...
 ]
+```
+### Category: Indicators
+Derived technical indicators for all American stocks.
+#### Function: `sma`
+```bash
+sma(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import sma
+>>> pprint(sma("AAPL","5","15"))
+{   
+    {
+        'Adj Close': 133.961395,
+        'Close': 134.389999,
+        'High': 135.410004,
+        'Low': 134.110001,
+        'Open': 135.009995,
+        'SMA_15': 132.5386244667,
+        'SMA_5': 133.3473692,
+        'SMA_ratio': 0.993935053,
+        'Volume': 66015800.0,
+    },
+    ...
+}
+```
+#### Function: `smav`
+```bash
+smav(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import smav
+>>> pprint(smav("AAPL","5","15"))
+{   
+     {
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'SMA_15_Volume': 72597693.33333333,
+        'SMA_5_Volume': 76912100.0,
+        'SMA_Volume_Ratio': 1.0594289773,
+        'Volume': 71115500.0,
+    },
+    ...
+}
+```
+#### Function: `so`
+```bash
+so(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import so
+>>> pprint(so("AAPL","5","15"))
+{   
+    {
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'High': 154.720001,
+        'High_15D': 154.979996,
+        'High_5D': 154.979996,
+        'Low': 152.399994,
+        'Lowest_15D': 144.5,
+        'Lowest_5D': 146.830002,
+        'Open': 153.869995,
+        'Stochastic_15': 87.3091363775,
+        'Stochastic_5': 83.6809450412,
+        'Stochastic_D_15': 63.76722393,
+        'Stochastic_D_5': 73.362841147,
+        'Stochastic_Ratio': 1.1504788295,
+        'Volume': 71115500.0,
+    },
+    ...
+}
+```
+#### Function: `adx`
+```bash
+adx(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import adx
+>>> pprint(adx("AAPL","5","15"))
+{   
+    {
+        '+DI_15': 29.8043887999,
+        '+DI_5': 36.9206180846,
+        '+DM': 0.0,
+        '+DM_15': 0.7673947975,
+        '+DM_5': 0.9678772875,
+        '-DI_15': 17.0685908239,
+        '-DI_5': 9.822375613,
+        '-DM': 0.0,
+        '-DM_15': 0.4394771484,
+        '-DM_5': 0.2574944505,
+        'ADX_15': 17.1390178125,
+        'ADX_5': 40.0829902345,
+        'ATR_15': 2.5747711274,
+        'ATR_5': 2.6215088959,
+        'ATR_Ratio': 1.0181522031,
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'DX_15': 27.0,
+        'DX_5': 58.0,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'TR': 2.320007,
+        'Volume': 71115500.0,
+        'prev_close': 152.509995,
+        'prev_high': 154.979996,
+        'prev_low': 152.339996,
+    },
+    ...
+}
+```
+#### Function: `rsi`
+```bash
+rsi(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import rsi
+>>> pprint(rsi("AAPL","5","15"))
+{   
+     {
+        '+DI_15': 29.8043887999,
+        '+DI_5': 36.9206180846,
+        '+DM': 0.0,
+        '+DM_15': 0.7673947975,
+        '+DM_5': 0.9678772875,
+        '-DI_15': 17.0685908239,
+        '-DI_5': 9.822375613,
+        '-DM': 0.0,
+        '-DM_15': 0.4394771484,
+        '-DM_5': 0.2574944505,
+        'ADX_15': 17.1390178125,
+        'ADX_5': 40.0829902345,
+        'ATR_15': 2.5747711274,
+        'ATR_5': 2.6215088959,
+        'ATR_Ratio': 1.0181522031,
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'DX_15': 27.0,
+        'DX_5': 58.0,
+        'Diff': 1.139999,
+        'Down': 0.0,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'RSI_15': 61.2264048905,
+        'RSI_5': 85.1554093234,
+        'RSI_ratio': 1.3908281807,
+        'RS_15': 1.5790747471,
+        'RS_5': 5.7364605854,
+        'TR': 2.320007,
+        'Up': 1.139999,
+        'Volume': 71115500.0,
+        'avg_15down': 0.5480000667,
+        'avg_15up': 0.8653330667,
+        'avg_5down': 0.2579986,
+        'avg_5up': 1.4799988,
+        'prev_close': 152.509995,
+        'prev_high': 154.979996,
+        'prev_low': 152.339996,
+    },
+    ...
+}
+```
+#### Function: `macd`
+```bash
+macd(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import macd
+>>> pprint(macd("AAPL","5","15"))
+{   
+    {
+        '+DI_15': 29.8043887999,
+        '+DI_5': 36.9206180846,
+        '+DM': 0.0,
+        '+DM_15': 0.7673947975,
+        '+DM_5': 0.9678772875,
+        '-DI_15': 17.0685908239,
+        '-DI_5': 9.822375613,
+        '-DM': 0.0,
+        '-DM_15': 0.4394771484,
+        '-DM_5': 0.2574944505,
+        '15_Ewm': 150.0104742249,
+        '5_Ewm': 152.0400618738,
+        'ADX_15': 17.1390178125,
+        'ADX_5': 40.0829902345,
+        'ATR_15': 2.5747711274,
+        'ATR_5': 2.6215088959,
+        'ATR_Ratio': 1.0181522031,
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'DX_15': 27.0,
+        'DX_5': 58.0,
+        'Diff': 1.139999,
+        'Down': 0.0,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'MACD': -2.029587649,
+        'Open': 153.869995,
+        'RSI_15': 61.2264048905,
+        'RSI_5': 85.1554093234,
+        'RSI_ratio': 1.3908281807,
+        'RS_15': 1.5790747471,
+        'RS_5': 5.7364605854,
+        'TR': 2.320007,
+        'Up': 1.139999,
+        'Volume': 71115500.0,
+        'avg_15down': 0.5480000667,
+        'avg_15up': 0.8653330667,
+        'avg_5down': 0.2579986,
+        'avg_5up': 1.4799988,
+        'prev_close': 152.509995,
+        'prev_high': 154.979996,
+        'prev_low': 152.339996,
+    },
+    ...
+}
+```
+#### Function: `atr`
+```bash
+atr(ticker_symbol,short_period,long_period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+short_period | str | Period for short window | False
+--- | --- | --- | --- |---
+long_period | str | Period for long window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import atr
+>>> pprint(atr("AAPL","5","15")
+{   
+    {
+        'ATR_15': 2.5747711274,
+        'ATR_5': 2.6215088959,
+        'ATR_Ratio': 1.0181522031,
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'TR': 2.320007,
+        'Volume': 71115500.0,
+        'prev_close': 152.509995,
+    },
+    ...
+}
+```
+#### Function: `wilder`
+```bash
+wilder(ticker_symbol,period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+period | str | Period for the window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import wilder
+>>> pprint(wilder("AAPL","5"))
+{   
+     {
+        'Adj Close': 134.409958,
+        'Close': 134.839996,
+        'High': 135.470001,
+        'Low': 133.339996,
+        'Open': 133.509995,
+        'Volume': 94264200.0,
+        'WMA': None,
+    },
+    ...
+}
+```
+#### Function: `bb`
+```bash
+bb(ticker_symbol,period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+period | str | Period for the window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import bb
+>>> pprint(bb("AAPL","5"))
+{   
+     {
+        '5_MA': 151.9419984,
+        'ATR_15': 2.5747711274,
+        'ATR_5': 2.6215088959,
+        'ATR_Ratio': 1.0181522031,
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'SD': 1.9880267536,
+        'TR': 2.320007,
+        'Volume': 71115500.0,
+        'lowerband': 147.9659448928,
+        'prev_close': 152.509995,
+        'upperband': 155.9180519072,
+    },
+    ...
+}
+```
+#### Function: `roc`
+```bash
+roc(ticker_symbol,period)
+```
+##### Arguments:
+Name | Type | Description | Optional | Default Value
+--- | --- | --- | --- |---
+ticker_symbol | str | Ticker of the stock | False
+--- | --- | --- | --- |---
+period | str | Period for the window | False
+##### Return value:
+Indicator's value for the required stock.
+##### Example:
+```bash
+>>> from stocksdata.indicators import roc
+>>> pprint(roc("AAPL","5"))
+{   
+    {
+        'Adj Close': 153.649994,
+        'Close': 153.649994,
+        'High': 154.720001,
+        'Low': 152.399994,
+        'Open': 153.869995,
+        'RC': 0.041412507,
+        'Volume': 71115500.0,
+    },
+    ...
+}
 ```
