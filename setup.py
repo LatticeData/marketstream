@@ -16,7 +16,6 @@ setuptools.setup(
     author='Lattice',
     author_email="ashkon@lattice.dev",
     packages=setuptools.find_packages(exclude=['tests', '.circleci']),
-    packages=['stocksdata'],
     tests_require=['pytest'],
     python_requires=">=3.7",
     classifiers=[
