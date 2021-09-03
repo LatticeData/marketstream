@@ -2903,9 +2903,7 @@ sma(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -2936,9 +2934,7 @@ smav(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -2969,9 +2965,7 @@ so(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3008,9 +3002,7 @@ adx(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3059,9 +3051,7 @@ rsi(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3122,9 +3112,7 @@ macd(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3188,9 +3176,7 @@ atr(ticker_symbol,short_period,long_period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 short_period | str | Period for short window | False
---- | --- | --- | --- |---
 long_period | str | Period for long window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3223,7 +3209,6 @@ wilder(ticker_symbol,period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 period | str | Period for the window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3252,7 +3237,6 @@ bb(ticker_symbol,period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 period | str | Period for the window | False
 ##### Return value:
 Indicator's value for the required stock.
@@ -3289,7 +3273,6 @@ roc(ticker_symbol,period)
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
 ticker_symbol | str | Ticker of the stock | False
---- | --- | --- | --- |---
 period | str | Period for the window | False
 ##### Return value:
 Indicator's value for the required stock.
