@@ -5,9 +5,9 @@ def wikipedia_url_to_ticker_symbol(wikipedia_url):
     params = {"wikipedia_url": wikipedia_url}
     return get_json("/search/wikpedia-url-to-ticker-symbol", params).get("ticker_symbol")
 
-#def stock_screener(param):
- #   params = param
-  #  return get_json("/screener", params).get("stocks")
+def stock_screener(param):
+    params = param
+    return get_json("/screener", params).get("stocks")
 
 def isin_to_ticker_symbol(isin):
     params = {"isin": isin}

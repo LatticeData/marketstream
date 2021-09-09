@@ -2,7 +2,7 @@ import pytest
 
 from stocksdata.search import (
     wikipedia_url_to_ticker_symbol,
-    #stock_screener,
+    stock_screener,
     isin_to_ticker_symbol,
     company_name_to_ticker_symbol
 )
@@ -14,12 +14,13 @@ def test_wikipedia_url_to_ticker_symbol():
         data == "AAPL"
     )
 
-#def test_stock_screener():
- #   param = {"country": "United States"}
-  #  data = stock_screener(param)
-   # assert (
-    #    isinstance(data, list)
-    #)
+def test_stock_screener():
+    param = {"country": "United States"}
+    data = stock_screener(param)
+    assert (
+        isinstance(data, list)
+        and "AAPL" in data
+    )
 
 def test_isin_to_ticker_symbol():
     isin = "US0378331005"
