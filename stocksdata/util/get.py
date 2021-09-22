@@ -9,8 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get(url_path, params=None):
-	if not params: params = {}
+def get(url_path, params={}):
 	host = "stock-market-data.p.rapidapi.com"
 	url = "https://%s/%s" % (host.rstrip("/"), url_path.lstrip("/"))
 	headers = {
