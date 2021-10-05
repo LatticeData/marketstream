@@ -227,7 +227,7 @@ twitter_sentiment(ticker_symbol)
 ##### Arguments:
 Name | Type | Description | Optional | Default Value
 --- | --- | --- | --- |---
-ticker_symbol | str | Ticker of the stock | False
+ticker_symbol | `str` | Ticker of the stock | `False`
 
 ##### Return value: 
 Twitter Sentiment score of the required stock.
