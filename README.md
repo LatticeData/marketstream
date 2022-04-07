@@ -1,4 +1,4 @@
-# Lattice Stock Market Data Python Client
+# MarketStream Python Client
 
 Comprehensive stock market data sourced from Yahoo Finance and a variety of other sources in one clean package. Provided data types include basic company information, real-time price information, financial statements, news coverage, stock similarity metrics, valuation metrics, and economic indicators.
 
