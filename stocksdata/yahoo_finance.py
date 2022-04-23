@@ -9,7 +9,7 @@ def raw_quote(ticker_symbol):
 @daily_cache
 def raw_historical_prices(ticker_symbol):
     params = {"ticker_symbol": ticker_symbol}
-    return get_json("/yfinance/historical-prices", params)
+    return get_json("/yfinance/historical-prices", params).get('historical prices')
 
 @daily_cache
 def technical_insights(ticker_symbol):
@@ -19,7 +19,7 @@ def technical_insights(ticker_symbol):
 @daily_cache
 def options_contracts(ticker_symbol):
     params = {"ticker_symbol": ticker_symbol}
-    return get_json("/yfinance/options-contracts", params)
+    return get_json("/yfinance/options-contracts", params).get('options')
 
 @daily_cache
 def price(ticker_symbol):

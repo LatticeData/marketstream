@@ -511,34 +511,35 @@ Annual balance sheet of recent years for the required stock
 ```bash
 >>> from stocksdata.financials import annual_balance_sheet
 >>> pprint(annual_balance_sheet("AAPL"))
-{   
-    '1506729600000': {
-        'Accounts Payable': 44242000000.0,      
-        'Cash': 20289000000.0,
-        'Common Stock': 35867000000.0,
-        'Inventory': 4855000000.0,
-        'Long Term Debt': 97207000000.0,        
-        'Long Term Investments': 194714000000.0,
-        'Net Receivables': 35673000000.0,       
-        'Net Tangible Assets': 134047000000.0,  
-        'Other Assets': 18177000000.0,
-        'Other Current Assets': 13936000000.0,
-        'Other Current Liabilities': 38099000000.0,
-        'Other Liabilities': 43251000000.0,
-        'Other Stockholder Equity': -150000000.0,
-        'Property Plant Equipment': 33783000000.0,
-        'Retained Earnings': 98330000000.0,
-        'Short Long Term Debt': 6496000000.0,
-        'Short Term Investments': 53892000000.0,
-        'Total Assets': 375319000000.0,
-        'Total Current Assets': 128645000000.0,
-        'Total Current Liabilities': 100814000000.0,
-        'Total Liabilities': 241272000000.0,
-        'Total Stockholder Equity': 134047000000.0,
-        'Treasury Stock': -150000000.0,
+[   
+    {
+        'Accounts Payable': 54763000000.0,
+        'Cash': 34940000000.0,
+        'Common Stock': 57365000000.0,
+        'Date': datetime.datetime(2021, 9, 25, 0, 0),
+        'Inventory': 6580000000.0,
+        'Long Term Debt': 109106000000.0,
+        'Long Term Investments': 127877000000.0,
+        'Net Receivables': 51506000000.0,
+        'Net Tangible Assets': 63090000000.0,
+        'Other Assets': 38762000000.0,
+        'Other Current Assets': 14111000000.0,
+        'Other Current Liabilities': 53577000000.0,
+        'Other Liabilities': 43050000000.0,
+        'Other Stockholder Equity': 163000000.0,
+        'Property Plant Equipment': 49527000000.0,
+        'Retained Earnings': 5562000000.0,
+        'Short Long Term Debt': 9613000000.0,
+        'Short Term Investments': 27699000000.0,
+        'Total Assets': 351002000000.0,
+        'Total Current Assets': 134836000000.0,
+        'Total Current Liabilities': 125481000000.0,
+        'Total Liabilities': 287912000000.0,
+        'Total Stockholder Equity': 63090000000.0,
+        'Treasury Stock': 163000000.0,
     },
     ...
-}
+]
 ```
 #### Function: `quarterly_balance_sheet`
 ```bash
@@ -554,34 +555,35 @@ Quarterly balance sheet of recent quarters for the required stock
 ```bash
 >>> from stocksdata.financials import quarterly_balance_sheet
 >>> pprint(quarterly_balance_sheet("AAPL"))
-{
-    '1601078400000': {
-        'Accounts Payable': 42296000000.0,
-        'Cash': 38016000000.0,
-        'Common Stock': 50779000000.0,
-        'Inventory': 4061000000.0,
-        'Long Term Debt': 98667000000.0,
-        'Long Term Investments': 100887000000.0,
-        'Net Receivables': 37445000000.0,
-        'Net Tangible Assets': 65339000000.0,
-        'Other Assets': 33952000000.0,
-        'Other Current Assets': 11264000000.0,
-        'Other Current Liabilities': 47867000000.0,
-        'Other Liabilities': 46108000000.0,
-        'Other Stockholder Equity': -406000000.0,
-        'Property Plant Equipment': 45336000000.0,
-        'Retained Earnings': 14966000000.0,
-        'Short Long Term Debt': 8773000000.0,
-        'Short Term Investments': 52927000000.0,
-        'Total Assets': 323888000000.0,
-        'Total Current Assets': 143713000000.0,
-        'Total Current Liabilities': 105392000000.0,
-        'Total Liabilities': 258549000000.0,
-        'Total Stockholder Equity': 65339000000.0,
-        'Treasury Stock': -406000000.0,
+[
+    {
+        'Accounts Payable': 74362000000.0,
+        'Cash': 37119000000.0,
+        'Common Stock': 58424000000.0,
+        'Date': datetime.datetime(2021, 12, 25, 0, 0),
+        'Inventory': 5876000000.0,
+        'Long Term Debt': 106629000000.0,
+        'Long Term Investments': 138683000000.0,
+        'Net Receivables': 65253000000.0,
+        'Net Tangible Assets': 71932000000.0,
+        'Other Assets': 50109000000.0,
+        'Other Current Assets': 18112000000.0,
+        'Other Current Liabilities': 57043000000.0,
+        'Other Liabilities': 55056000000.0,
+        'Other Stockholder Equity': -927000000.0,
+        'Property Plant Equipment': 39245000000.0,
+        'Retained Earnings': 14435000000.0,
+        'Short Long Term Debt': 11169000000.0,
+        'Short Term Investments': 26794000000.0,
+        'Total Assets': 381191000000.0,
+        'Total Current Assets': 153154000000.0,
+        'Total Current Liabilities': 147574000000.0,
+        'Total Liabilities': 309259000000.0,
+        'Total Stockholder Equity': 71932000000.0,
+        'Treasury Stock': -927000000.0,
     },
     ...
-}
+]
 ```
 #### Function: `latest_annual_balance_sheet`
 ```bash
@@ -598,33 +600,29 @@ Latest annual balance sheet of the required stock.
 >>> from stocksdata.financials import latest_annual_balance_sheet
 >>> pprint(latest_annual_balance_sheet("AAPL")) 
 {
-    'current_annual_balance_sheet': {
-        'Accounts Payable': 42296000000.0,
-        'Cash': 38016000000.0,
-        'Common Stock': 50779000000.0,
-        'Inventory': 4061000000.0,
-        'Long Term Debt': 98667000000.0,
-        'Long Term Investments': 100887000000.0,
-        'Net Receivables': 37445000000.0,
-        'Net Tangible Assets': 65339000000.0,
-        'Other Assets': 33952000000.0,
-        'Other Current Assets': 11264000000.0,
-        'Other Current Liabilities': 47867000000.0,
-        'Other Liabilities': 46108000000.0,
-        'Other Stockholder Equity': -406000000.0,
-        'Property Plant Equipment': 45336000000.0,
-        'Retained Earnings': 14966000000.0,
-        'Short Long Term Debt': 8773000000.0,
-        'Short Term Investments': 52927000000.0,
-        'Total Assets': 323888000000.0,
-        'Total Current Assets': 143713000000.0,
-        'Total Current Liabilities': 105392000000.0,
-        'Total Liabilities': 258549000000.0,
-        'Total Stockholder Equity': 65339000000.0,
-        'Treasury Stock': -406000000.0,
-    },
-    'date': '2021-07-30T11:50:11.411845',
-    'status': 'success',
+    'Accounts Payable': 54763000000.0,
+    'Cash': 34940000000.0,
+    'Common Stock': 57365000000.0,
+    'Inventory': 6580000000.0,
+    'Long Term Debt': 109106000000.0,
+    'Long Term Investments': 127877000000.0,
+    'Net Receivables': 51506000000.0,
+    'Net Tangible Assets': 63090000000.0,
+    'Other Assets': 38762000000.0,
+    'Other Current Assets': 14111000000.0,
+    'Other Current Liabilities': 53577000000.0,
+    'Other Liabilities': 43050000000.0,
+    'Other Stockholder Equity': 163000000.0,
+    'Property Plant Equipment': 49527000000.0,
+    'Retained Earnings': 5562000000.0,
+    'Short Long Term Debt': 9613000000.0,
+    'Short Term Investments': 27699000000.0,
+    'Total Assets': 351002000000.0,
+    'Total Current Assets': 134836000000.0,
+    'Total Current Liabilities': 125481000000.0,
+    'Total Liabilities': 287912000000.0,
+    'Total Stockholder Equity': 63090000000.0,
+    'Treasury Stock': 163000000.0,
 }
 ```
 #### Function: `latest_quarterly_balance_sheet`
@@ -641,34 +639,30 @@ Latest quarterly balance sheet of the required stock
 ```bash
 >>> from stocksdata.financials import latest_quarterly_balance_sheet
 >>> pprint(latest_quarterly_balance_sheet("AAPL")) 
-{   
-    'current_quarterly_balance_sheet': {
-        'Accounts Payable': 40409000000.0,
-        'Cash': 34050000000.0,
-        'Common Stock': 54989000000.0,
-        'Inventory': 5178000000.0,
-        'Long Term Debt': 105752000000.0,
-        'Long Term Investments': 131948000000.0,    
-        'Net Receivables': 33908000000.0,
-        'Net Tangible Assets': 64280000000.0,       
-        'Other Assets': 44854000000.0,
-        'Other Current Assets': 13641000000.0,      
-        'Other Current Liabilities': 51306000000.0, 
-        'Other Liabilities': 38354000000.0,
-        'Other Stockholder Equity': 58000000.0,     
-        'Property Plant Equipment': 38615000000.0,  
-        'Retained Earnings': 9233000000.0,
-        'Short Long Term Debt': 8039000000.0,       
-        'Short Term Investments': 27646000000.0,    
-        'Total Assets': 329840000000.0,
-        'Total Current Assets': 114423000000.0,     
-        'Total Current Liabilities': 107754000000.0,
-        'Total Liabilities': 265560000000.0,        
-        'Total Stockholder Equity': 64280000000.0,  
-        'Treasury Stock': 58000000.0,
-    },
-    'date': '2021-07-30T12:10:59.002167',
-    'status': 'success',
+{
+    'Accounts Payable': 74362000000.0,
+    'Cash': 37119000000.0,
+    'Common Stock': 58424000000.0,
+    'Inventory': 5876000000.0,
+    'Long Term Debt': 106629000000.0,
+    'Long Term Investments': 138683000000.0,
+    'Net Receivables': 65253000000.0,
+    'Net Tangible Assets': 71932000000.0,
+    'Other Assets': 50109000000.0,
+    'Other Current Assets': 18112000000.0,
+    'Other Current Liabilities': 57043000000.0,
+    'Other Liabilities': 55056000000.0,
+    'Other Stockholder Equity': -927000000.0,
+    'Property Plant Equipment': 39245000000.0,
+    'Retained Earnings': 14435000000.0,
+    'Short Long Term Debt': 11169000000.0,
+    'Short Term Investments': 26794000000.0,
+    'Total Assets': 381191000000.0,
+    'Total Current Assets': 153154000000.0,
+    'Total Current Liabilities': 147574000000.0,
+    'Total Liabilities': 309259000000.0,
+    'Total Stockholder Equity': 71932000000.0,
+    'Treasury Stock': -927000000.0,
 }
 ```
 #### Funtion: 'annual_income_statement'
@@ -685,36 +679,37 @@ Annual income statement of recent years for the required stock
 ```bash
 >>> from stocksdata.financials import annual_income_statement       
 >>> pprint(annual_income_statement("AAPL"))        
-{   
-    '1506729600000': {
-        'Cost Of Revenue': 141048000000.0,
+[   
+    {
+        'Cost Of Revenue': 212981000000.0,
+        'Date': datetime.datetime(2021, 9, 25, 0, 0),
         'Discontinued Operations': 0.0,
-        'EBIT': 61344000000.0,
+        'EBIT': 108949000000.0,
         'Effect of Accounting Charges': 0.0,
         'Extraordinary Items': 0.0,
-        'Gross Margin': 0.3846986049,
-        'Gross Profit': 88186000000.0,
-        'Income Before Tax': 64089000000.0,
-        'Income Tax Expense': 15738000000.0,
-        'Interest Expense': -2323000000.0,
+        'Gross Margin': 0.4177935963,
+        'Gross Profit': 152836000000.0,
+        'Income Before Tax': 109207000000.0,
+        'Income Tax Expense': 14527000000.0,
+        'Interest Expense': -2645000000.0,
         'Minority Interest': 0.0,
-        'Net Income': 48351000000.0,
-        'Net Income Applicable To Common Shares': 48351000000.0,
-        'Net Income From Continuing Ops': 48351000000.0,
-        'Net Margin': 0.2109242085,
+        'Net Income': 94680000000.0,
+        'Net Income Applicable To Common Shares': 94680000000.0,
+        'Net Income From Continuing Ops': 94680000000.0,
+        'Net Margin': 0.2588179336,
         'Non Recurring': 0.0,
-        'Operating Income': 61344000000.0,
-        'Operating Margin': 0.2676042821,
+        'Operating Income': 108949000000.0,
+        'Operating Margin': 0.2978237753,
         'Other Items': 0.0,
         'Other Operating Expenses': 0.0,
-        'Research & Development': 11581000000.0,
-        'Selling, General & Administrative': 15261000000.0,
-        'Total Operating Expenses': 167890000000.0,
-        'Total Other Income Expense Net': 2745000000.0,
-        'Total Revenue': 229234000000.0,
+        'Research & Development': 21914000000.0,
+        'Selling, General & Administrative': 21973000000.0,
+        'Total Operating Expenses': 256868000000.0,
+        'Total Other Income Expense Net': 258000000.0,
+        'Total Revenue': 365817000000.0,
     },
     ...
-}
+]
 ```
 #### Function: `quarterly_income_statement`
 ```bash
@@ -730,36 +725,37 @@ Quarterly income statement of recent years for the required stock
 ```bash
 >>> from stocksdata.financials import quarterly_income_statement
 >>> pprint(quarterly_income_statement("AAPL"))
-{
-    '1601078400000': {
-        'Cost Of Revenue': 40009000000.0,
+[
+    {
+        'Cost Of Revenue': 69702000000.0,
+        'Date': datetime.datetime(2021, 12, 25, 0, 0),
         'Discontinued Operations': 0.0,
-        'EBIT': 14775000000.0,
+        'EBIT': 41488000000.0,
         'Effect of Accounting Charges': 0.0,
         'Extraordinary Items': 0.0,
-        'Gross Margin': 0.381603759,
-        'Gross Profit': 24689000000.0,
-        'Income Before Tax': 14901000000.0,
-        'Income Tax Expense': 2228000000.0,
-        'Interest Expense': -634000000.0,
+        'Gross Margin': 0.4376376619,
+        'Gross Profit': 54243000000.0,
+        'Income Before Tax': 41241000000.0,
+        'Income Tax Expense': 6611000000.0,
+        'Interest Expense': -694000000.0,
         'Minority Interest': 0.0,
-        'Net Income': 12673000000.0,
-        'Net Income Applicable To Common Shares': 12673000000.0,
-        'Net Income From Continuing Ops': 12673000000.0,
-        'Net Margin': 0.1958793162,
+        'Net Income': 34630000000.0,
+        'Net Income Applicable To Common Shares': 34630000000.0,
+        'Net Income From Continuing Ops': 34630000000.0,
+        'Net Margin': 0.2793981201,
         'Non Recurring': 0.0,
-        'Operating Income': 14775000000.0,
-        'Operating Margin': 0.2283687286,
+        'Operating Income': 41488000000.0,
+        'Operating Margin': 0.3347291137,
         'Other Items': 0.0,
         'Other Operating Expenses': 0.0,
-        'Research & Development': 4978000000.0,
-        'Selling, General & Administrative': 4936000000.0,
-        'Total Operating Expenses': 49923000000.0,
-        'Total Other Income Expense Net': 126000000.0,
-        'Total Revenue': 64698000000.0,
+        'Research & Development': 6306000000.0,
+        'Selling, General & Administrative': 6449000000.0,
+        'Total Operating Expenses': 82457000000.0,
+        'Total Other Income Expense Net': -247000000.0,
+        'Total Revenue': 123945000000.0,
     },
     ...
-}
+]
 ```
 #### Function: `latest_annual_income_statement`
 ```bash
@@ -773,38 +769,35 @@ ticker_symbol | str | Ticker of the stock | False
 Latest annual income statement for the required stock
 ##### Example:
 ```bash
->>> from stocksdata.financials import quarterly_income_statement
+>>> from stocksdata.financials import latest_annual_income_statement
 >>> pprint(latest_annual_income_statement("AAPL")) 
+
 {
-    'current_annual_income_statement': {
-        'Cost Of Revenue': 169559000000.0,
-        'Discontinued Operations': 0.0,
-        'EBIT': 66288000000.0,
-        'Effect of Accounting Charges': 0.0,
-        'Extraordinary Items': 0.0,
-        'Gross Margin': 0.38233247727810865,
-        'Gross Profit': 104956000000.0,
-        'Income Before Tax': 67091000000.0,
-        'Income Tax Expense': 9680000000.0,
-        'Interest Expense': -2873000000.0,
-        'Minority Interest': 0.0,
-        'Net Income': 57411000000.0,
-        'Net Income Applicable To Common Shares': 57411000000.0,
-        'Net Income From Continuing Ops': 57411000000.0,
-        'Net Margin': 0.20913611278072236,
-        'Non Recurring': 0.0,
-        'Operating Income': 66288000000.0,
-        'Operating Margin': 0.24147314354406862,
-        'Other Items': 0.0,
-        'Other Operating Expenses': 0.0,
-        'Research & Development': 18752000000.0,
-        'Selling, General & Administrative': 19916000000.0,
-        'Total Operating Expenses': 208227000000.0,
-        'Total Other Income Expense Net': 803000000.0,
-        'Total Revenue': 274515000000.0,
-    },
-    'date': '2021-07-30T12:19:25.981871',
-    'status': 'success',
+    'Cost Of Revenue': 212981000000.0,
+    'Discontinued Operations': 0.0,
+    'EBIT': 108949000000.0,
+    'Effect of Accounting Charges': 0.0,
+    'Extraordinary Items': 0.0,
+    'Gross Margin': 0.4177935962516778,
+    'Gross Profit': 152836000000.0,
+    'Income Before Tax': 109207000000.0,
+    'Income Tax Expense': 14527000000.0,
+    'Interest Expense': -2645000000.0,
+    'Minority Interest': 0.0,
+    'Net Income': 94680000000.0,
+    'Net Income Applicable To Common Shares': 94680000000.0,
+    'Net Income From Continuing Ops': 94680000000.0,
+    'Net Margin': 0.2588179335569424,
+    'Non Recurring': 0.0,
+    'Operating Income': 108949000000.0,
+    'Operating Margin': 0.29782377527561593,
+    'Other Items': 0.0,
+    'Other Operating Expenses': 0.0,
+    'Research & Development': 21914000000.0,
+    'Selling, General & Administrative': 21973000000.0,
+    'Total Operating Expenses': 256868000000.0,
+    'Total Other Income Expense Net': 258000000.0,
+    'Total Revenue': 365817000000.0,
 }
 ```
 #### Function: `latest_quarterly_income_statement`
@@ -822,35 +815,31 @@ Latest quarterly income statement for the required stock.
 >>> from stocksdata.financials import latest_quarterly_income_statement
 >>> pprint(latest_quarterly_income_statement("AAPL"))
 {
-    'current_quarterly_income_statement': {
-        'Cost Of Revenue': 46179000000.0,
-        'Discontinued Operations': 0.0,
-        'EBIT': 24126000000.0,
-        'Effect of Accounting Charges': 0.0,
-        'Extraordinary Items': 0.0,
-        'Gross Margin': 0.4329272785323084,
-        'Gross Profit': 35255000000.0,
-        'Income Before Tax': 24369000000.0,
-        'Income Tax Expense': 2625000000.0,
-        'Interest Expense': -665000000.0,
-        'Minority Interest': 0.0,
-        'Net Income': 21744000000.0,
-        'Net Income Applicable To Common Shares': 21744000000.0,
-        'Net Income From Continuing Ops': 21744000000.0,
-        'Net Margin': 0.2670137780288332,
-        'Non Recurring': 0.0,
-        'Operating Income': 24126000000.0,
-        'Operating Margin': 0.296264459562345,
-        'Other Items': 0.0,
-        'Other Operating Expenses': 0.0,
-        'Research & Development': 5717000000.0,
-        'Selling, General & Administrative': 5412000000.0,
-        'Total Operating Expenses': 57308000000.0,
-        'Total Other Income Expense Net': 243000000.0,
-        'Total Revenue': 81434000000.0,
-    },
-    'date': '2021-07-30T12:21:29.676466',
-    'status': 'success',
+    'Cost Of Revenue': 69702000000.0,
+    'Discontinued Operations': 0.0,
+    'EBIT': 41488000000.0,
+    'Effect of Accounting Charges': 0.0,
+    'Extraordinary Items': 0.0,
+    'Gross Margin': 0.43763766186615033,
+    'Gross Profit': 54243000000.0,
+    'Income Before Tax': 41241000000.0,
+    'Income Tax Expense': 6611000000.0,
+    'Interest Expense': -694000000.0,
+    'Minority Interest': 0.0,
+    'Net Income': 34630000000.0,
+    'Net Income Applicable To Common Shares': 34630000000.0,
+    'Net Income From Continuing Ops': 34630000000.0,
+    'Net Margin': 0.2793981201339304,
+    'Non Recurring': 0.0,
+    'Operating Income': 41488000000.0,
+    'Operating Margin': 0.3347291137197951,
+    'Other Items': 0.0,
+    'Other Operating Expenses': 0.0,
+    'Research & Development': 6306000000.0,
+    'Selling, General & Administrative': 6449000000.0,
+    'Total Operating Expenses': 82457000000.0,
+    'Total Other Income Expense Net': -247000000.0,
+    'Total Revenue': 123945000000.0,
 }
 ```
 ### Category: Screeners
@@ -1238,7 +1227,7 @@ None
 List of tickers.
 ##### Example:
 ```bash
->> from stocksdata.screeners import solid_midcap_growth_funds
+>>> from stocksdata.screeners import solid_midcap_growth_funds
 >>> pprint(solid_midcap_growth_funds()) 
 [
     'RRMGX',
@@ -1400,21 +1389,17 @@ Company profile description.
 >>> from stocksdata.stock import company_profile
 >>> pprint(company_profile("AAPL"))
 {
-    'company_profile': {
-        'City': 'Cupertino',
-        'Company Name': 'Apple Inc.',
-        'Country': 'United States',
-        'Description': 'Apple Inc. designs, manufactures, and ---- Cupertino, California.',
-        'Exchange': 'NasdaqGS',
-        'Full Time Employees': 100000,
-        'Industry': 'Consumer Electronics',
-        'Sector': 'Technology',
-        'Short Company Name': 'Apple Inc.',
-        'State': 'CA',
-        'Website': 'http://www.apple.com',
-    },
-    'date': '2021-07-31T10:12:24.849292',
-    'status': 'success',
+    'City': 'Cupertino',
+    'Company Name': 'Apple Inc.',
+    'Country': 'United States',
+    'Description': 'Apple Inc. designs, manufactures, and markets.......... headquartered in Cupertino, California.',
+    'Exchange': 'NasdaqGS',
+    'Full Time Employees': 100000,
+    'Industry': 'Consumer Electronics',
+    'Sector': 'Technology',
+    'Short Company Name': 'Apple Inc.',
+    'State': 'CA',
+    'Website': 'https://www.apple.com',
 }
 ```
 #### Function: `Quote`
@@ -1432,24 +1417,20 @@ Quote description.
 >>> from stocksdata.stock import quote
 >>> pprint(quote("AAPL"))           
 {
-    'date': '2021-07-31T10:14:45.973997',
-    'quote': {
-        '52-Week Change': -4.1399994,
-        '52-Week High': 150.0,
-        '52-Week Low': 103.1,
-        'Company Name': 'Apple Inc.',
-        'Current Price': 145.86,
-        'Exchange': 'NasdaqGS',
-        'Market Capitalization': 2411094867968.0,
-        'Shares Outstanding': 16530199552.0,
-        'Short Company Name': 'Apple Inc.',
-        "Today's Change": 0.22000122,
-        "Today's High": 146.33,
-        "Today's Low": 144.1101,
-        "Today's Open": 144.38,
-        "Today's Volume": 64471899.0,
-    },
-    'status': 'success',
+    '52-Week Change': -21.15001,
+    '52-Week High': 182.94,
+    '52-Week Low': 122.25,
+    'Company Name': 'Apple Inc.',
+    'Current Price': 161.79,
+    'Exchange': 'NasdaqGS',
+    'Market Capitalization': 2640315678720.0,
+    'Shares Outstanding': 16319399936.0,
+    'Short Company Name': 'Apple Inc.',
+    "Today's Change": -4.630005,
+    "Today's High": 167.8699,
+    "Today's Low": 161.5,
+    "Today's Open": 166.46,
+    "Today's Volume": 84882424.0,
 }
 ```
 #### Function: `historical_prices`
@@ -1464,25 +1445,29 @@ ticker_symbol | str | Ticker of the stock | False
 Historical prices of the required stock.
 ##### Example:
 ```bash
- {
-    '1627516800000': {
-        'Adj Close': 145.639999,
-        'Close': 145.639999,
-        'High': 146.550003,
-        'Low': 144.580002,
-        'Open': 144.690002,
-        'Volume': 56699500.0,
+>>> from stocksdata.stock import historical_prices
+>>> pprint(historical_prices("AAPL"))
+ [
+    {
+        'Adj Close': 33.904774,
+        'Close': 35.91,
+        'Date': '2017-04-24T00:00:00',
+        'High': 35.987499,
+        'Low': 35.794998,
+        'Open': 35.875,
+        'Volume': 68537200.0,
     },
-    '1627603200000': {
-        'Adj Close': 145.860001,
-        'Close': 145.860001,
-        'High': 146.330002,
-        'Low': 144.110001,
-        'Open': 144.380005,
-        'Volume': 70382000.0,
+    {
+        'Adj Close': 34.114857,
+        'Close': 36.1325,
+        'Date': '2017-04-25T00:00:00',
+        'High': 36.224998,
+        'Low': 35.967499,
+        'Open': 35.977501,
+        'Volume': 75486000.0,
     },
     ...
-}
+]
 ```
 #### Function: `key_stats`
 ```bash
@@ -1498,28 +1483,24 @@ Key stats of the company.
 ```bash
 >>> from stocksdata.stock import key_stats  
 >>> pprint(key_stats("AAPL")) 
+
 {
-    'date': '2021-07-31T10:19:45.254202',
-    'key_statistics': {
-        '% Held by Insiders': 0.0007000000000000001,
-        '% Held by Institutions': 0.5854,
-        '200-Day Moving Average': 131.27,
-        '5 Year Average Dividend Yield': 1.32,
-        '50-Day Moving Average': 139.9,
-        '52 Week High': 150.0,
-        '52 Week Low': 103.1,
-        '52-Week Change': 0.3369,
-        'Avg Vol (10 day)': 82340000.0,
-        'Avg Vol (3 month)': 83750000.0,
-        'Beta (5Y Monthly)': 1.21,
-        'Book Value Per Share (mrq)': 3.88,
-        'Current Ratio (mrq)': 1.06,
-        'Diluted EPS (ttm)': 5.11,
-        'Dividend Date': '2021-08-11T00:00:00',
-        'EBITDA': 110930000000.0,
-        ...
-    },
-    'status': 'success',
+    '% Held by Insiders': 0.0007000000000000001,
+    '% Held by Institutions': 0.5935,
+    '200-Day Moving Average': 158.97,
+    '5 Year Average Dividend Yield': 1.11,
+    '50-Day Moving Average': 166.99,
+    '52 Week High': 182.94,
+    '52 Week Low': 122.25,
+    '52-Week Change': 0.2009,
+    'Avg Vol (10 day)': 75060000.0,
+    'Avg Vol (3 month)': 91400000.0,
+    'Beta (5Y Monthly)': 1.19,
+    'Book Value Per Share (mrq)': 4.4,
+    'Current Ratio (mrq)': 1.04,
+    'Diluted EPS (ttm)': 6.01,
+    'Dividend Date': '2022-02-09T00:00:00',
+    ...
 }
 ```
 ### Category: Valuation
@@ -1570,31 +1551,33 @@ Historical valuation measue of the required ticker.
 ```bash
 >>> from stocksdata.valuation import historical_valuation_measures                
 >>> pprint(historical_valuation_measures("AAPL")) 
-{   
-    '1593475200000': {
-        'Enterprise Value': 1580000000000.0,     
-        'Enterprise Value/EBITDA': 95.15,        
-        'Enterprise Value/Revenue': 26.44,       
-        'Forward P/E': 24.33,
-        'Market Cap (intraday)': 1560000000000.0,
-        'PEG Ratio (5 yr expected)': 2.02,       
-        'Price/Book (mrq)': 19.93,
-        'Price/Sales (ttm)': 6.12,
-        'Trailing P/E': 28.52,
+[
+    {
+        'Date': datetime.datetime(2022, 4, 18, 0, 0),
+        'Enterprise Value': 2760000000000.0,
+        'Enterprise Value/EBITDA': 21.06,
+        'Enterprise Value/Revenue': 7.29,
+        'Forward P/E': 27.47,
+        'Market Cap (intraday)': 2700000000000.0,
+        'PEG Ratio (5 yr expected)': 3.19,
+        'Price/Book (mrq)': 37.5,
+        'Price/Sales (ttm)': 7.3,
+        'Trailing P/E': 27.41,
     },
-    '1601424000000': {
-        'Enterprise Value': 1990000000000.0,     
-        'Enterprise Value/EBITDA': 108.89,       
-        'Enterprise Value/Revenue': 30.69,       
-        'Forward P/E': 30.12,
-        'Market Cap (intraday)': 1970000000000.0,
-        'PEG Ratio (5 yr expected)': 2.86,       
-        'Price/Book (mrq)': 27.2,
-        'Price/Sales (ttm)': 7.5,
-        'Trailing P/E': 35.12,
+    {
+        'Date': datetime.datetime(2021, 12, 31, 0, 0),
+        'Enterprise Value': 2960000000000.0,
+        'Enterprise Value/EBITDA': 66.4,
+        'Enterprise Value/Revenue': 23.91,
+        'Forward P/E': 31.65,
+        'Market Cap (intraday)': 2900000000000.0,
+        'PEG Ratio (5 yr expected)': 3.79,
+        'Price/Book (mrq)': 45.99,
+        'Price/Sales (ttm)': 8.19,
+        'Trailing P/E': 31.65,
     },
     ...
-}
+]
 ```
 #### Function: `valuation_measures`
 ```bash
@@ -1672,25 +1655,27 @@ Historical prices for the required stock.
 ```bash
 >>> from stocksdata.yahoo_finance import raw_historical_prices
 >>> pprint(raw_historical_prices("AAPL"))
-{        
-        {
-            'Adj Close': 148.479996,
-            'Close': 148.479996,
-            'High': 150.0,
-            'Low': 147.089996,
-            'Open': 149.240005,
-            'Volume': 106820300.0,
-        },
-        {
-            'Adj Close': 146.389999,
-            'Close': 146.389999,
-            'High': 149.759995,
-            'Low': 145.880005,
-            'Open': 148.460007,
-            'Volume': 93100300.0,
-        },
+[
+    {
+        'Adj Close': 33.904781,
+        'Close': 35.91,
+        'Date': '2017-04-24T00:00:00',
+        'High': 35.987499,
+        'Low': 35.794998,
+        'Open': 35.875,
+        'Volume': 68537200.0,
+    },
+    {
+        'Adj Close': 34.114857,
+        'Close': 36.1325,
+        'Date': '2017-04-25T00:00:00',
+        'High': 36.224998,
+        'Low': 35.967499,
+        'Open': 35.977501,
+        'Volume': 75486000.0,
+    },
         ...
-}        
+]        
 ```
 #### Function: `technical_insights`
 ```bash
@@ -1745,34 +1730,32 @@ Options contracts of the required stock..
 >>> from stocksdata.yahoo_finance import options_contracts
 >>> pprint(options_contracts("AAPL"))
 {
-            {
-                'ask': {'fmt': '0.00', 'raw': 0},
-                'bid': {'fmt': '0.00', 'raw': 0},
-                'change': {'fmt': '0.00', 'raw': 0},
-                'contractSize': 'REGULAR',
-                'contractSymbol': 'AAPL210917P00225000',
-                'currency': 'USD',
-                'expiration': {
-                    'fmt': '2021-09-17',
-                    'longFmt': '2021-09-17T00:00',
-                    'raw': 1631836800,
-                },
-                'impliedVolatility': {
-                    'fmt': '0.00%',
-                    'raw': 1.0000000000000003e-05,
-                },
-                'inTheMoney': True,
-                'lastPrice': {'fmt': '106.69', 'raw': 106.69},
-                'lastTradeDate': {
-                    'fmt': '2020-10-12',
-                    'longFmt': '2020-10-12T14:01',
-                    'raw': 1602511264,
-                },
-                'openInterest': {'fmt': '0', 'longFmt': '0', 'raw': 0},
-                'percentChange': {'fmt': '0.00%', 'raw': 0},
-                'strike': {'fmt': '225.00', 'raw': 225},
-                'volume': {'fmt': '12', 'longFmt': '12', 'raw': 12},
+    'calls': [
+        {
+            'ask': {'fmt': '63.25', 'raw': 63.25},
+            'bid': {'fmt': '60.10', 'raw': 60.1},
+            'change': {'fmt': '-2.71', 'raw': -2.709999},
+            'contractSize': 'REGULAR',
+            'contractSymbol': 'AAPL220429C00100000',
+            'currency': 'USD',
+            'expiration': {
+                'fmt': '2022-04-29',
+                'longFmt': '2022-04-29T00:00',
+                'raw': 1651190400,
             },
+            'impliedVolatility': {'fmt': '243.16%', 'raw': 2.431644545898437},
+            'inTheMoney': True,
+            'lastPrice': {'fmt': '64.05', 'raw': 64.05},
+            'lastTradeDate': {
+                'fmt': '2022-04-22',
+                'longFmt': '2022-04-22T19:33',
+                'raw': 1650656016,
+            },
+            'openInterest': {'fmt': '5', 'longFmt': '5', 'raw': 5},
+            'percentChange': {'fmt': '-4.06%', 'raw': -4.0593157},
+            'strike': {'fmt': '100.00', 'raw': 100},
+            'volume': {'fmt': '2', 'longFmt': '2', 'raw': 2},
+        },
             ...
 }
 ```

@@ -7,7 +7,7 @@ from stocksdata.valuation import (
     valuation_measures
 )
 
-ticker_symbol = "AAPl"
+ticker_symbol = "AAPL"
 
 def test_cost_of_equity():
     data = cost_of_equity(ticker_symbol)
@@ -25,11 +25,10 @@ def test_enterprise_value():
 
 def test_historical_valuation_measures():
     data = historical_valuation_measures(ticker_symbol)
-    resp_key = 'historical valuation measures'
     assert (
-        data[resp_key] is not None
-        and len(data[resp_key]) > 5
-        and "Market Cap (intraday)" in list(data[resp_key][0].keys())
+        data is not None
+        and len(data) > 5
+        and "Market Cap (intraday)" in list(data[0].keys())
     )
 
 def test_valuation_measures():

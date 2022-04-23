@@ -22,6 +22,7 @@ def test_news_sentiment():
     assert (
         data is not None
         and "sentiment_score" in data
+        and len(data['source_articles']) > 0
     )
     
 def test_news():

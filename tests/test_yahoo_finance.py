@@ -34,12 +34,11 @@ def test_raw_quote():
 
 def test_raw_historical_prices():
     data = raw_historical_prices(ticker_symbol)
-    resp_key = 'historical prices'
     assert (
-        len(data[resp_key]) > 0
-        and "Open" in list(data[resp_key][0].keys())
-        and data[resp_key][0] is not None
-        and isinstance(data[resp_key][0]["Open"], float)
+        len(data) > 0
+        and "Open" in list(data[0].keys())
+        and data[0] is not None
+        and isinstance(data[0]["Open"], float)
     )
 
 def test_technical_insights():
@@ -57,19 +56,17 @@ def test_technical_insights():
 def test_options_contracts():
     data = options_contracts(ticker_symbol)
     assert (
-        data["status"] == "success"
-        and "options" in data
-        and data["options"] is not None
-        and "puts" in data["options"]
-        and data["options"]["puts"] is not None
-        and "calls" in data["options"]
-        and data["options"]["calls"] is not None
-        and "change" in list(data["options"]["calls"][0].keys())
-        and data["options"]["calls"][0]["change"] is not None
-        and isinstance(data["options"]["calls"][0]["change"]["fmt"], str)
-        and "lastPrice" in list(data["options"]["calls"][0].keys())
-        and data["options"]["calls"][0]["lastPrice"] is not None
-        and isinstance(data["options"]["calls"][0]["lastPrice"]["raw"], float)
+        data is not None
+        and "puts" in data
+        and data["puts"] is not None
+        and "calls" in data
+        and data["calls"] is not None
+        and "change" in list(data["calls"][0].keys())
+        and data["calls"][0]["change"] is not None
+        and isinstance(data["calls"][0]["change"]["fmt"], str)
+        and "lastPrice" in list(data["calls"][0].keys())
+        and data["calls"][0]["lastPrice"] is not None
+        and isinstance(data["calls"][0]["lastPrice"]["raw"], float)
     )
 
 def test_price():

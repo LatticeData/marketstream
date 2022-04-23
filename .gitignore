@@ -139,3 +139,4 @@ credentials/*
 list.py
 variables.env
 config.py
+.vscode/
